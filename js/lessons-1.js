@@ -18,8 +18,19 @@
 // ЗАДАЧА 3
 // ПОТРІБНО ЗАПИТАТИ У МАГАЗИНІ ЦІНУ ЗА КОЖЕН ОКРЕМИЙ ТОВАР,ТА ВИВЕСТИ ПОВІДОМЛЕННЯМ   ЗАГАЛЬНУ ЦІНУ ТОВАРУ
 
-const price1 = Number(prompt("Введіть ціну товару1"));
+/* const price1 = Number(prompt("Введіть ціну товару1"));
 const price2 = +prompt("Введіть ціну товару2");
 const price3 = +prompt("Введіть ціну товару3");
 const totalPrice = price1 + price2 + price3;
-console.log(totalPrice);
+console.log(totalPrice); */
+
+/* ЗАДАЧА 4
+ВИКОРИСТОВУЮЧИ КОНСТРУКЦІЮ IF...ELSE , НАПИШИ КОД, ЯКИЙ БУДЕ ЗАПИТУВАТИ: 
+"СКІЛЬКИ МІСЯЦІВ МАЄ РІК", ЯКЩО КОРИСТУВАЧ ВВОДИТЬ 12 ТО У КОНСОЛІ ПИШЕ ВІРНО, ЯКЩО НЕ ПРАВИЛЬНО КОРИСТУВАЧ ВВІВ, ТОДІ У КОНСОЛІ ПИШЕ 
+"НЕ ЗНАЄТЕ? 12" */
+
+/* const year = 12;
+let userMessage = Number(prompt("СКІЛЬКИ МІСЯЦІВ МАЄ РІК?"));
+if (userMessage === year) {
+    console.log("ВІРНО")
+} else { console.log("НЕ ЗНАЄТЕ? 12");} */
