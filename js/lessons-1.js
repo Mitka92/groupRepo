@@ -110,3 +110,13 @@ if (userMessage === year) {
 //     console.log(i);
 //   }
 // }
+
+// // ЗАДАЧА 10 
+// // НАПИШІТЬ ПРОГРАМУ, ЯКА БУДЕ ВИЗНАЧАТИ ДОВЖИНУ ІМЕНІ , ЯКЩО ІМЯ БІЛЬШЕ 7 СИМВОЛІВ, КОНСОЛЬ ВИВОДИТЬ "Wow, you  have a REALLY long name!" , ЯКЩО МЕНШЕ 7 
+// // "Your name isn't very long"
+// const userName = prompt("Введіть ваше ім'я");
+// if (userName.length > 7) {alert ("Wow, you  have a REALLY long Name!");
+    
+// } else {alert("Your name isn't very long");
+    
+// }
