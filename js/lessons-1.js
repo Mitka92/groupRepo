@@ -87,17 +87,26 @@ if (userMessage === year) {
 // ЗАДАЧА 7
 // НАПИШІТЬ ПРОГРАМУ, ЯКА ПРОВІРЯЄ ЛОГІН І ПАРОЛЬ, І ВИВОДИТЬ ПРИВІТАННЯ - ЯКЩО ВСЕ ДОБРЕ, АБО ВИДАЄ ПОМИЛКУ , ЩО НЕ ВІРНИЙ ЛОГІН
 
-const login = prompt("Введіть логін");
-const password = prompt("Введіть пароль");
+// const login = prompt("Введіть логін");
+// const password = prompt("Введіть пароль");
 
-const userLogin = "my login";
-const userPassword = "my password";
+// const userLogin = "my login";
+// const userPassword = "my password";
 
-const result = login === userLogin && password === userPassword ? "Ти молодець" : "Ти не молодець!!!";
-alert(result);
+// const result = login === userLogin && password === userPassword ? "Ти молодець" : "Ти не молодець!!!";
+// alert(result);
 
 // if (login === userLogin && password === userPassword) {
 //     alert("Ти молодець");
 // } else {
 //     alert("Ти не молодець!!!");
+// }
+// ЗАДАЧА 9
+// НАПИШІТЬ ЦИКЛ FOR ЯКА БУДЕ ВИВОДИТИ У КОНСОЛЬ ЧИСЛА ЗА ЗРОСТАННЯМ ВІД MIN ДО MAX, ПІСЛЯ ТОГО ЧИСЛА КРАТНІ 10
+// const min = 1;
+// const max = 100;
+// for (let i = min; i <= max; i++) {
+//   if (i % 10 === 0) {
+//     console.log(i);
+//   }
 // }
