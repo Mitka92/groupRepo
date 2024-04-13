@@ -34,3 +34,13 @@ let userMessage = Number(prompt("СКІЛЬКИ МІСЯЦІВ МАЄ РІК?"))
 if (userMessage === year) {
     console.log("ВІРНО")
 } else { console.log("НЕ ЗНАЄТЕ? 12");} */
+
+// ЗАДАЧА 5
+// НАПИШІТЬ ПРОГРАМУ, ЯКА ДОЗВОЛЯТИМЕ ЮЗЕРУ ВВОДИТИ ЧИСЛО І ВИЗНАЧАТИМЕ ЧИ ЦЕ ПАРНЕ ЧИСЛО , ЧИ НЕ ПАРНЕ.
+
+// const number = prompt("Введіть число");
+// // if (number % 2 === 0) {
+// //     console.log("парне");
+// // } else {console.log("непарне")};
+//  const result = number % 2 === 0 ? "парне" : "непарне";
+//  console.log(result);
