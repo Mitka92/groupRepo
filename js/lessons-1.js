@@ -65,21 +65,39 @@ if (userMessage === year) {
 // ЯКЩО МІСЯЦЬ - ціна 10.99
 // ЯКЩО РІК - ціна 100.99
 
-const description = prompt("Введи тип підписки:").toUpperCase();
-switch (description) {
-    case "ДЕНЬ":
-        alert("1.99");
-        break;
-    case "ТИЖДЕНЬ":
-        alert("5.99");
-        break;
-    case "МІСЯЦЬ":
-        alert("10.99");
-        break;
-    case "РІК":
-        alert("100.99");
-        break;
-    default:
-        alert ("Невірно введений тип підписки!!!");
-        break;
-}
+// const description = prompt("Введи тип підписки:").toUpperCase();
+// switch (description) {
+//     case "ДЕНЬ":
+//         alert("1.99");
+//         break;
+//     case "ТИЖДЕНЬ":
+//         alert("5.99");
+//         break;
+//     case "МІСЯЦЬ":
+//         alert("10.99");
+//         break;
+//     case "РІК":
+//         alert("100.99");
+//         break;
+//     default:
+//         alert ("Невірно введений тип підписки!!!");
+//         break;
+// }
+
+// ЗАДАЧА 7
+// НАПИШІТЬ ПРОГРАМУ, ЯКА ПРОВІРЯЄ ЛОГІН І ПАРОЛЬ, І ВИВОДИТЬ ПРИВІТАННЯ - ЯКЩО ВСЕ ДОБРЕ, АБО ВИДАЄ ПОМИЛКУ , ЩО НЕ ВІРНИЙ ЛОГІН
+
+const login = prompt("Введіть логін");
+const password = prompt("Введіть пароль");
+
+const userLogin = "my login";
+const userPassword = "my password";
+
+const result = login === userLogin && password === userPassword ? "Ти молодець" : "Ти не молодець!!!";
+alert(result);
+
+// if (login === userLogin && password === userPassword) {
+//     alert("Ти молодець");
+// } else {
+//     alert("Ти не молодець!!!");
+// }
