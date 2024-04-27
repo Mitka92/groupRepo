@@ -144,18 +144,47 @@
 // Повинно получитись 390, якщо обєкт salaries пустий , то результат буде 0
 // ЩОБ МОЖНА БУЛО ПЕРЕВИКОРИСТОВУВАТИ ЛОГІКУ, ТОМУ ПИШЕМО ФУНКЦІЮ
 
-const salaries = {
-  John: 100,
-  Ann: 160,
-  Pete: 130,
-};
-function calc(saleries) {
-  let result = Object.values(salaries);
-  console.log(result);
-  let sum = 0;
-  for (let element of result) {
-    sum += element;
-  }
-  return sum;
-}
-console.log(calc(salaries));
+// const salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130,
+// };
+// function calc(saleries) {
+//   let result = Object.values(salaries);
+//   console.log(result);
+//   let sum = 0;
+//   for (let element of result) {
+//     sum += element;
+//   }
+//   return sum;
+// }
+// console.log(calc(salaries));
+
+// ЗАДАЧА 3
+// Створи обєкт calculator(калькулятор) з 3-ма методами:
+// read()- запитує 2 значення у юзера і зберігає їх як значення обєкта;
+// sum() -повертає суму збережених значень; 
+// mult() -перемножує значення збережені і повертає результат;
+
+//  const calculator = {
+//  a: null,
+//  b: null,
+
+//      read() {
+//          this.a = Number(prompt("Введіть а"));
+//          this.b = Number(prompt("Введіть b"));
+//   },
+
+//      sum() {
+//          return this.a + this.b;
+//   },
+
+//      mult() {
+//          return this.a * this.b;
+//   },
+// };
+
+
+// calculator.read();
+// console.log(`sum`, calculator.sum());
+// console.log(`mult`, calculator.mult());
