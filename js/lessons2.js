@@ -21,7 +21,6 @@
 
 //console.log(styles);
 
-
 //ЗАДАЧА 2
 //використовуючи цикл for , який для кожного елемента масива буде виводити в консоль
 //повідомлення у форматі < індекс елемента > та < значення елемента >.
@@ -39,14 +38,31 @@
 // 2) перепишіть функцією findSmallestNumber(numbers)
 
 // function findSmallestNumber(numbers) {
-//    let result = numbers[0];
-//     for (let i = 0; i < numbers.length; i++) {
-//         if (numbers[i] < result) {
-//             result = numbers[i]
-//         }
+//   let result = numbers[0];
+//   for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] < result) {
+//       result = numbers[i];
 //     }
-//     return result;
+//   }
+//   return result;
 // }
 
-// console.log(findSmallestNumber([2, 17, 94, 1, 23, 37])); 
+// console.log(findSmallestNumber([2, 17, 94, 1, 23, 37]));
 // console.log(findSmallestNumber([49, 4, 83, 7, 12]));
+
+// ЗАДАЧА 4
+// Провірте, чи являється рядок полідромом
+
+// const str = "ротатор"; //true
+// const newString = "Hello"; //false
+// const newStr = str.split("").reverse().join("");
+// console.log(str === newStr);
+// const newString2 = newString.split("").reverse().join("");
+// console.log(newString === newString2);
+
+// function isPolindrome(string) {
+//   const newStr = string.split("").reverse().join("");
+//   console.log(string === newStr);
+// }
+// isPolindrome(str);
+// isPolindrome(newString);
