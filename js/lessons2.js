@@ -78,7 +78,7 @@
 //     let result = 0;
 //     for (let i = 0; i < args.length; i++) {
 //         result += args[i];
-        
+
 //     }
 //     return result / args.length;
 // }
@@ -138,3 +138,24 @@
 // console.log(removeCourse("Vue")); // 'Курс з таким іменем не найдено'
 // console.log(updateCourse("Express", "NestJS")); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
 // console.log(courses);
+// ЗАДАЧА 2
+// У вас є обєкт , у якому зберігаються зарплати нашої команди.
+// Напишіть код , для підрахунку всіх зарплат і збережіть результат в змінні sum
+// Повинно получитись 390, якщо обєкт salaries пустий , то результат буде 0
+// ЩОБ МОЖНА БУЛО ПЕРЕВИКОРИСТОВУВАТИ ЛОГІКУ, ТОМУ ПИШЕМО ФУНКЦІЮ
+
+const salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130,
+};
+function calc(saleries) {
+  let result = Object.values(salaries);
+  console.log(result);
+  let sum = 0;
+  for (let element of result) {
+    sum += element;
+  }
+  return sum;
+}
+console.log(calc(salaries));
