@@ -123,13 +123,13 @@ if (userMessage === year) {
 
 // Задача 11
 // Напишіть програму, яка перевіряє, чи зареєстрований користувач вже на сайті якщо ні пропонує зареєструватися
-const registeredUsers = ["user1", "user2", "user3"];
-function checkUser(username) {
-  if (registeredUsers.includes(username)) {
-    alert("Ви вже зареєстровані на сайті.");
-  } else {
-    alert("Ви ще не зареєстровані на сайті. Будь ласка, зареєструйтесь.");
-  }
-}
-let userInput = prompt("Введіть ім'я користувача:");
-checkUser(userInput);
+// const registeredUsers = ["user1", "user2", "user3"];
+// function checkUser(username) {
+//   if (registeredUsers.includes(username)) {
+//     alert("Ви вже зареєстровані на сайті.");
+//   } else {
+//     alert("Ви ще не зареєстровані на сайті. Будь ласка, зареєструйтесь.");
+//   }
+// }
+// let userInput = prompt("Введіть ім'я користувача:");
+// checkUser(userInput);
