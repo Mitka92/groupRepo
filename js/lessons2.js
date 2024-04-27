@@ -66,3 +66,19 @@
 // }
 // isPolindrome(str);
 // isPolindrome(newString);
+
+// ЗАДАЧА 5
+// Напишіть ф-цію calculateAverage() яка приймає довільну кількість аргументів і повертає їх середнє значення .Всі аргументи будуть тільки числовими
+
+// console.log(calculateAverage(1, 2, 3, 4)); // 2.5
+// console.log(calculateAverage(14, 8, 2)); // 8
+// console.log(calculateAverage(27, 43, 2, 8, 36));// 23.2
+
+// function calculateAverage(...args) {
+//     let result = 0;
+//     for (let i = 0; i < args.length; i++) {
+//         result += args[i];
+        
+//     }
+//     return result / args.length;
+// }
