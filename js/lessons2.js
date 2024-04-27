@@ -82,3 +82,24 @@
 //     }
 //     return result / args.length;
 // }
+
+// ЗАДАЧА 8
+// Напишіть ф-цію capitalize , яка буде приймати рядок і буде повертати новий рядок , де кожне слово буде з великої букви
+// capitalize('the quick brown fox')// 'The Quick Brown Fox '
+// function capitalize(string) {
+//     const newStr = string.split(' ');
+//     // console.log(newStr);
+//     const wordArr = [];
+//     for (const item of newStr) {
+//         let firstLetter = item[0].toUpperCase();
+//         // console.log(firstLetter);
+//         let lastLetters = item.slice(1);
+//         // console.log(lastLetters);
+//         let newWord = `${firstLetter}${lastLetters}`;
+//         // console.log(newWord);
+//         wordArr.push(newWord);
+//         // console.log(wordArr);
+//     }
+//     console.log(wordArr.join(' '));
+// }
+
