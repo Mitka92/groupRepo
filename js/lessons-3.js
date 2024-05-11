@@ -219,18 +219,49 @@ const scientists = [
 // const newUser = new User('Zhozha', 47, 45);
 // console.log(newUser);
 
-ЗАДАЧА 1
-1) Напишіть ф - ю конструктор яка створює обєкт person з такимим ключами:
-const Person = {
-  firstName,
-  lastName,
-  age,
-  gender,
-  interest,
-  bio() {
+// ЗАДАЧА 7
+// 1) Напишіть ф - ю конструктор яка створює обєкт person з такимим ключами
+
+// function Person (firstName, lastName, age, gender, interest) {
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+//   this.age = age;
+//   this.gender = gender;
+//   this.interest = interest;
+
+//   Person.prototype.bio = function() { 
+//     console.log(`Привіт ${this.firstName} мені ${this.age} років. Мені подобається ${this.interest}`);
+//     // виводить рядок Привіт {імя} мені {вік} років. Мені подобається {інтерес}
+//   } 
+//   Person.prototype.greeting = function () {
+//     console.log(`Привіт, я ${this.firstName}`);
+//     // Привіт, я {імя}
+//   }
+// };
+// const newPerson = new Person('Євген', 'Осадчий', 27, 'male', 'IT');
+
+// newPerson.bio();
+// newPerson.greeting();
+
+class Person {
+  constructor(firstName, lastName, age, gender, interest) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.gender = gender;
+    this.interest = interest;
+  }
+  bio () { 
+    console.log(`Привіт ${this.firstName} мені ${this.age} років. Мені подобається ${this.interest}`);
     // виводить рядок Привіт {імя} мені {вік} років. Мені подобається {інтерес}
-  },
-  greeting() {
+  } 
+  greeting () {
+    console.log(`Привіт, я ${this.firstName}`);
     // Привіт, я {імя}
-  },
-};
+  }
+}
+const newPerson = new Person('Євген', 'Осадчий', 27, 'male', 'IT');
+
+console.log(newPerson);
+newPerson.bio();
+newPerson.greeting();
