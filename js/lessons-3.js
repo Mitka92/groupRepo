@@ -152,45 +152,85 @@ const scientists = [
 // Зібрати в allTopics масив усіх предметів всіх курсів використовуючи flatMap.
 // Використовуючи Array.prototype.filter виконати фільтрацію, залишивши в uniqueTopics тільки унікальні елементи.
 
-const courses = [
-  {
-    name: "Basic HTML+CSS",
-    topics: ["VSCode", "HTML", "CSS", "GitHub Desktop", "GitHub"],
-  },
-  {
-    name: "Intermediate HTML+CSS",
-    topics: ["VSCode", "Terminal", "Git", "GitHub", "HTML", "CSS"],
-  },
-{
-    name: "Basic JavaScript",
-    topics: [
-      "VSCode",
-      "Type system",
-      "Loops",
-      "Functions",
-      "Conditions",
-      "Classes",
-      "DOM",
-      "Git",
-      "GitHub",
-    ],
-  },
-  {
-    name: "Intermediate JavaScript",
-    topics: [
-      "VSCode",
-      "NPM",
-      "Bundlers",
-      "Transpiling",
-      "Promises",
-      "AJAX",
-      "Git",
-      "GitHub",
-    ],
-  },
-];
+// const courses = [
+//   {
+//     name: "Basic HTML+CSS",
+//     topics: ["VSCode", "HTML", "CSS", "GitHub Desktop", "GitHub"],
+//   },
+//   {
+//     name: "Intermediate HTML+CSS",
+//     topics: ["VSCode", "Terminal", "Git", "GitHub", "HTML", "CSS"],
+//   },
+// {
+//     name: "Basic JavaScript",
+//     topics: [
+//       "VSCode",
+//       "Type system",
+//       "Loops",
+//       "Functions",
+//       "Conditions",
+//       "Classes",
+//       "DOM",
+//       "Git",
+//       "GitHub",
+//     ],
+//   },
+//   {
+//     name: "Intermediate JavaScript",
+//     topics: [
+//       "VSCode",
+//       "NPM",
+//       "Bundlers",
+//       "Transpiling",
+//       "Promises",
+//       "AJAX",
+//       "Git",
+//       "GitHub",
+//     ],
+//   },
+// ];
 
-const newArrCourse = courses.flatMap(course => course.topics);
-console.table(newArrCourse);
-const uniqueTopics = newArrCourse.filter((el, index, arr) => arr.indexOf(el) === index);
-console.table(uniqueTopics);
+// const newArrCourse = courses.flatMap(course => course.topics);
+// console.table(newArrCourse);
+// const uniqueTopics = newArrCourse.filter((el, index, arr) => arr.indexOf(el) === index);
+// console.table(uniqueTopics);
+
+// Напишіть клас User для створення користувача з наступними властивостями:
+// username - імя, рядок
+// age - вік, число
+// numberOfPosts - кількість постів, число
+// Клас очікує один параметр - об'єкт налаштувань з однойменними властивостями.
+// Добавте метод getInfo(), який повертає рядок:
+// User ${ імя } is ${ вік } years old and has ${ кількість постів } posts.
+
+// class User {
+//     constructor(username, age, numberOfPosts) {
+//         this.username = username;
+//         this.age = age;
+//         this.numberOfPosts = numberOfPosts;
+//     }
+
+//     getInfo() {
+//         return `User ${this.username} is ${this.age} years old and has ${this.numberOfPosts} posts`
+//     }
+
+// }
+
+// const newUser = new User('Zhozha', 47, 45);
+// console.log(newUser);
+
+ЗАДАЧА 1
+1) Напишіть ф - ю конструктор яка створює обєкт person з такимим ключами:
+const Person = {
+  firstName,
+  lastName,
+  age,
+  gender,
+  interest,
+  bio() {
+    // виводить рядок Привіт {імя} мені {вік} років. Мені подобається {інтерес}
+  },
+  greeting() {
+    // Привіт, я {імя}
+  },
+};
