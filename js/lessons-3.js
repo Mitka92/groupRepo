@@ -140,3 +140,57 @@ const scientists = [
 // const younger = scientists.toSorted((a, b) => (a.dead - a.born) - (b.dead - b.born));
 // console.log(younger);
 
+// 5)відфільтрувати, хто народився в 15,16,17ст;
+// const scientistsByBorn = scientists.filter(scientist => scientist.born > 1399 && scientist.born < 1700).map(scientist => `${scientist.name} ${scientist.surname}`);
+// console.log(scientistsByBorn);
+
+// 6)знайти рік народження Albert Einstein;
+// const someScientist = scientists.find(scientist => scientist.name === 'Albert' && scientist.surname === 'Einstein');
+// console.log(someScientist.born);
+
+// ЗАДАЧА 6
+// Зібрати в allTopics масив усіх предметів всіх курсів використовуючи flatMap.
+// Використовуючи Array.prototype.filter виконати фільтрацію, залишивши в uniqueTopics тільки унікальні елементи.
+
+const courses = [
+  {
+    name: "Basic HTML+CSS",
+    topics: ["VSCode", "HTML", "CSS", "GitHub Desktop", "GitHub"],
+  },
+  {
+    name: "Intermediate HTML+CSS",
+    topics: ["VSCode", "Terminal", "Git", "GitHub", "HTML", "CSS"],
+  },
+{
+    name: "Basic JavaScript",
+    topics: [
+      "VSCode",
+      "Type system",
+      "Loops",
+      "Functions",
+      "Conditions",
+      "Classes",
+      "DOM",
+      "Git",
+      "GitHub",
+    ],
+  },
+  {
+    name: "Intermediate JavaScript",
+    topics: [
+      "VSCode",
+      "NPM",
+      "Bundlers",
+      "Transpiling",
+      "Promises",
+      "AJAX",
+      "Git",
+      "GitHub",
+    ],
+  },
+];
+
+const newArrCourse = courses.flatMap(course => course.topics);
+console.table(newArrCourse);
+const uniqueTopics = newArrCourse.filter((el, index, arr) => arr.indexOf(el) === index);
+console.table(uniqueTopics);
