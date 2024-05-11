@@ -130,3 +130,13 @@ const scientists = [
 // const scientistsLife = scientists.reduce((acc, scientist) => acc + (scientist.dead - scientist.born), 0);
 // console.log(scientistsLife / scientists.length);
 
+// 3) відсортувати по алфавіту;
+
+// const sorted = scientists.toSorted((a, b) => b.name.localeCompare(a.name));
+// console.log(sorted);
+
+//4)відсортувати по кількості прожитих років;
+
+// const younger = scientists.toSorted((a, b) => (a.dead - a.born) - (b.dead - b.born));
+// console.log(younger);
+
